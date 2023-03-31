@@ -1,0 +1,19 @@
+// importing all the partials
+@import "_default.scss";
+@import "_videoplayer.scss";
+
+.hidden {
+    display: none;
+}
+
+// overriding the default styles
+#navbar_new {
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+
+#navbarNav{
+    justify-content: flex-end;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
