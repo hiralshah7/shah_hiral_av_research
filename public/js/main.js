@@ -17,4 +17,11 @@ captionBtn.forEach(button => button.addEventListener('click', toggleCaptionMode)
 
 
 // FOR THE AUDIO PLAYER
+const transcriptBtn = document.querySelector('.transcript-btn');
+const transcript = document.querySelector('.transcript');
+
+transcriptBtn.addEventListener('click', () => {
+  transcript.classList.toggle('hidden');
+});
+
 
