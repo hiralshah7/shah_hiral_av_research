@@ -10,7 +10,7 @@ body {
 }
 
 // caption button 
-.captions {
+.captions, .transcript-btn {
     background: #ffffff;
     font-family: 'helvetica neue', helvetica, arial, sans-serif;
     color: #35006e;
@@ -79,6 +79,26 @@ body {
     
 }
 
+.transcript {
+    width: 400px;
+    background-color: #ffffff;
+    color: #35006e;
+    font-weight: 500;
+    border: 2px solid #35006e;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    height: 300px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    margin-left: 40px;
+
+}
+
 .audioComp{
     display: flex;
     flex-direction: column;
@@ -89,7 +109,6 @@ body {
 }
 
 .audio11 {
-    //heading
     font-size: 25px;
     margin-top: 20px;
     text-transform: uppercase;
@@ -120,6 +139,7 @@ body {
 
 .captions {
     width: 140px;
+    margin-left: 0;
 }
 
 video {
@@ -149,6 +169,11 @@ video {
 // for mobile view
 @media (max-width: 768px) {
     .main11 {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .audio11 {
         width: 100%;
     }
 
@@ -183,5 +208,36 @@ video {
 
     #head1 {
         width: 100%;
+    }
+
+    .videobox {
+       display: flex;
+       flex-direction: column-reverse;
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main14 {
+        width: 340px;
+
+    }
+
+    video
+    {
+        margin: 0 auto;
+    }
+
+    .bg-light {
+        width: 100%;
+    }
+
+    .transcript-btn {
+        margin-left: 0;
+    }
+
+    .transcript {
+        margin-left: 0;
+        width: 80%;
     }
 }

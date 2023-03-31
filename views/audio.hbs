@@ -1,17 +1,19 @@
 <!-- audio component -->
-<div class="audioComp">
-    <h2 class="audio11">Welcome to Audio Component</h2>
-    <p class="main11">Our accessibility app features an audio component with easy-to-use controls that allow users to play and pause the audio, adjust the volume, and skip ahead or back. Additionally, the app includes a "Show Transcript" button that displays the transcript of the audio content on the screen. This feature is especially useful for users who are deaf or hard of hearing, or for those who prefer to read the content instead of listening to it. With these features, our app aims to provide an inclusive and accessible experience for all users.<p>
+ <div class="audioComp">
+        <h2 class="audio11">Welcome to Audio Component</h2>
 </div>
-
-
-<div id="audioTime">
+<div class="videobox">
+    <div class="video-wrapper">
     <!-- linking audio file -->
     <audio id="audio" src="/asset/audio/audio1.mp3" controls>
         <track default kind="captions" srclang="en" src="/asset/audio_subtitle/audio2vtt.vtt" />
     </audio>
-
       <button class="transcript-btn">Show Transcript</button>
+</div>
+        <div class="box1">
+            <p class="main11">Our accessibility app features an audio component with easy-to-use controls that allow users to play and pause the audio, adjust the volume, and skip ahead or back. Additionally, the app includes a "Show Transcript" button that displays the transcript of the audio content on the screen. This feature is especially useful for users who are deaf or hard of hearing, or for those who prefer to read the content instead of listening to it. With these features, our app aims to provide an inclusive and accessible experience for all users.<p>
+        </div>
+
       <section class="transcript hidden">
         <h3 class="hidden">Transcript</h3>
         <blockquote class="blockquote text-center">
@@ -38,4 +40,5 @@
             <p>Are you?</p>
         </p>
         </blockquote>
-      </section>
+    </section>
+</section>

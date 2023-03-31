@@ -22,6 +22,16 @@ const transcript = document.querySelector('.transcript');
 
 transcriptBtn.addEventListener('click', () => {
   transcript.classList.toggle('hidden');
+
+  // change the button text
+   if (transcriptBtn.textContent === 'Show Transcript') {
+    transcriptBtn.textContent = 'Hide Transcript';
+    } else {
+    transcriptBtn.textContent = 'Show Transcript';
+    }
+
+
+
 });
 
 
